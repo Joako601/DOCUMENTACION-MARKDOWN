@@ -1,6 +1,6 @@
 # Tecnológico de Software
 ## Materia: Fundamentos de álgebra
-## Alumno: Tanjiro Jesús Hernández López
+## Alumno: Joaquin Uriona
 ## Actividad \#16 - Matrices doc
 
 ---
@@ -50,6 +50,17 @@ $$
 ---
 # OTRO EJERCICIO
 ...
+
+### Ejercicio 1: clasificar matrices
+
+1. Matriz identidad
+
+$$ A =
+\begin{pmatrix}
+1 & 0 \\
+0 & 1 \\
+\end{pmatrix}
+$$
 
 
 
