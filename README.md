@@ -51,16 +51,230 @@ $$
 # OTRO EJERCICIO
 ...
 
-### Ejercicio 1: clasificar matrices
+--------------------------------------
+### Ejercicio 1:
 
-1. Matriz identidad
+1. Primera matriz
 
 $$ A =
 \begin{pmatrix}
 1 & 0 \\
 0 & 1 \\
 \end{pmatrix}
+= Matriz \\ de \\ Identidad
 $$
+
+2. Segunda matriz
+
+$$ B =
+\begin{pmatrix}
+3 & 0 & 0 \\
+0 & -2 & 0 \\
+0 & 0 & 5 \\
+\end{pmatrix}
+= Matriz \\ Diagonal
+$$
+
+3. Tercera matriz
+
+$$ C =
+\begin{pmatrix}
+2 & 1 & 4 \\
+1 & 3 & 5 \\
+4 & 5 & 6 \\
+\end{pmatrix}
+= Matriz \\ Cuadrada
+$$
+
+4. Cuarta Matriz
+
+$$ D =
+\begin{pmatrix}
+1 & 2 & 3 \\
+0 & 4 & 5 \\
+0 & 0 & 6 \\
+\end{pmatrix}
+= Matriz \\ triangular \\ superior
+$$
+
+--------------------------------------
+### Ejercicio 2:
+
+a) Suma de A + B
+
+$$ A =
+\begin{pmatrix}
+2 & -1 \\
+3 & 4 \\
+\end{pmatrix}
+$$
+
+$$ B =
+\begin{pmatrix}
+5 & 2 \\
+-1 & 3 \\
+\end{pmatrix}
+$$
+
+
+$$ A + B =
+\begin{pmatrix}
+2 + 5 & -1 + 2 \\
+3 + (-1) & 4 + 3 \\
+\end{pmatrix}
+$$
+
+Resultado:
+
+$$ A + B =
+\begin{pmatrix}
+7 & 1 \\
+2 & 7 \\
+\end{pmatrix}
+$$
+
+b) Resta de 2A - B
+
+$$ A =
+\begin{pmatrix}
+2 & -1 \\
+3 & 4 \\
+\end{pmatrix}
+$$
+
+$$ B =
+\begin{pmatrix}
+5 & 2 \\
+-1 & 3 \\
+\end{pmatrix}
+$$
+
+Multiplicar la matriz A por 2
+
+$$ 2A =
+\begin{pmatrix}
+2 * 2 & 2 * -1 \\
+2 * 3 & 2 * 4 \\
+\end{pmatrix}
+$$ 
+
+$$ 2A =
+\begin{pmatrix}
+4 & -2 \\
+6 & 8 \\
+\end{pmatrix}
+$$ 
+
+Restar 2A - B
+
+$$ 2A - B =
+\begin{pmatrix}
+4 - 5 & -2 - 2 \\
+6 - (-1) & 8 - 3 \\
+\end{pmatrix}
+$$
+
+Resultado:
+
+$$ 2A - B =
+\begin{pmatrix}
+-1 & -4 \\
+7 & 5 \\
+\end{pmatrix}
+$$
+
+c) AB
+
+$$ A =
+\begin{pmatrix}
+2 & -1 \\
+3 & 4 \\
+\end{pmatrix}
+$$
+
+$$ B =
+\begin{pmatrix}
+5 & 2 \\
+-1 & 3 \\
+\end{pmatrix}
+$$
+
+$$ AB =
+\begin{bmatrix}
+2 * 5 & 2 * 2 \\
+-1 * -1 & -1 * 3 \\
+            \\  
+3 * 5 & 3 * 2 \\
+4 * -1 & 4 * 3 \\
+\end{bmatrix}
+$$
+
+Resultado:
+
+$$ AB =
+\begin{pmatrix}
+11 & 1 \\
+11 & 18 \\
+\end{pmatrix}
+$$
+
+d) BA
+
+$$ B =
+\begin{pmatrix}
+5 & 2 \\
+-1 & 3 \\
+\end{pmatrix}
+$$
+
+$$ A =
+\begin{pmatrix}
+2 & -1 \\
+3 & 4 \\
+\end{pmatrix}
+$$
+
+
+
+$$ BA =
+\begin{bmatrix}
+5 * 2 & 5 * -1 \\
+2 * 3 & 2 * 4 \\
+                  \\
+-1 * 2 & -1 * -1 \\
+3 * 3 & 3 * 4 \\
+\end{bmatrix}
+$$
+
+Resultado:
+
+$$ BA =
+\begin{pmatrix}
+16 & 3 \\
+7 & 13 \\
+\end{pmatrix}
+$$
+
+e) A^T
+
+$$ A =
+\begin{pmatrix}
+2 & -1 \\
+3 & 4 \\
+\end{pmatrix}
+$$
+
+Resultado:
+
+$$ A^T =
+\begin{pmatrix}
+2 & 3 \\
+-1 & 4 \\
+\end{pmatrix}
+$$
+
+
+
 
 
 
