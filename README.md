@@ -51,7 +51,7 @@ $$
 # OTRO EJERCICIO
 ...
 
---------------------------------------
+------------------------------------
 ### Ejercicio 1:
 
 1. Primera matriz
@@ -83,7 +83,7 @@ $$ C =
 1 & 3 & 5 \\
 4 & 5 & 6 \\
 \end{pmatrix}
-= Matriz \\ Cuadrada
+= Matriz \\ simetrica
 $$
 
 4. Cuarta Matriz
@@ -97,7 +97,7 @@ $$ D =
 = Matriz \\ triangular \\ superior
 $$
 
---------------------------------------
+------------------------------------
 ### Ejercicio 2:
 
 a) Suma de A + B
@@ -149,7 +149,7 @@ $$ B =
 \end{pmatrix}
 $$
 
-Multiplicar la matriz A por 2
+Se multiplica la matriz A por 2
 
 $$ 2A =
 \begin{pmatrix}
@@ -165,7 +165,7 @@ $$ 2A =
 \end{pmatrix}
 $$ 
 
-Restar 2A - B
+Se restar 2A - B
 
 $$ 2A - B =
 \begin{pmatrix}
@@ -274,14 +274,131 @@ $$ A^T =
 $$
 
 
+------------------------------------
+### Ejercicio 3:
 
+Matrices base:
 
+$$ A = 
+\begin{pmatrix}
+1 & 2 \\
+3 & 4 \\
+\end{pmatrix}
+$$
 
+$$ B = 
+\begin{pmatrix}
+2 & 0 \\
+1 & 3 \\
+\end{pmatrix}
+$$
 
+$$ C = 
+\begin{pmatrix}
+1 & 1 \\
+0 & 2 \\
+\end{pmatrix}
+$$
 
+Verificar que (AB)C = A(BC)
 
+1. verificacion de (AB)C
 
+Primero multiplicamos A * B
 
+$$ AB =
+\begin{pmatrix}
+1(2) + 2(1) & 1(0) + 2(3) \\
+3(2) + 4(1) & 3(0) + 3(4) \\
+\end{pmatrix} 
+$$
+
+$$
+\begin{pmatrix}
+2 + 2 & 0 + 6 \\
+6 + 4 & 0 + 12 \\
+\end{pmatrix}
+$$
+
+$$
+\begin{pmatrix}
+4 & 6 \\
+10 & 12 \\
+\end{pmatrix}
+$$
+
+Segundo multiplicamos (AB) * C
+
+$$ (AB)C =
+\begin{pmatrix}
+4(1) + 6(0) & 4(1) + 6(2) \\
+10(1) + 12(0) & 10(1) + 12(2) \\
+\end{pmatrix}
+$$
+
+$$
+\begin{pmatrix}
+4 + 0 & 4 + 12 \\
+10 + 0 & 10 + 24 \\
+\end{pmatrix}
+$$
+
+$$
+\begin{pmatrix}
+4 & 16 \\
+10 & 34 \\
+\end{pmatrix}
+$$
+
+2. verificacion de A(BC)
+
+Primero multiplicamos B * C
+
+$$ BC =
+\begin{pmatrix}
+2(1) + 0(0) & 2(1) + 0(2) \\
+1(1) + 3(0) & 1(1) + 3(2) \\
+\end{pmatrix}
+$$
+
+$$
+\begin{pmatrix}
+2 + 0 & 2 + 0 \\
+1 + 0 & 1 + 6 \\
+\end{pmatrix}
+$$
+
+$$
+\begin{pmatrix}
+2 & 2 \\
+1 & 7 \\
+\end{pmatrix}
+$$
+
+Segundo multiplicamos A * (BC)
+
+$$ A(BC) =
+\begin{pmatrix}
+1(2) + 2(1) & 1(2) + 2(7) \\
+3(2) + 4(1) & 3(2) + 4(7) \\
+\end{pmatrix}
+$$
+
+$$
+\begin{pmatrix}
+2 + 2 & 2 + 14 \\
+6 + 4 & 6 + 28 \\
+\end{pmatrix}
+$$
+
+$$
+\begin{pmatrix}
+4 & 16 \\
+10 & 34 \\
+\end{pmatrix}
+$$
+
+Son iguales por la propiedad asociativa
 
 ---
 
