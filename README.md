@@ -53,6 +53,7 @@ $$
 
 ------------------------------------
 ### Ejercicio 1:
+Identificacion de matrices.
 
 1. Primera matriz
 
@@ -99,6 +100,7 @@ $$
 
 ------------------------------------
 ### Ejercicio 2:
+Resolucion de problemas algebraicos con matrices.
 
 a) Suma de A + B
 
@@ -276,6 +278,7 @@ $$
 
 ------------------------------------
 ### Ejercicio 3:
+Verificacion de matrices por asociacion
 
 Matrices base:
 
