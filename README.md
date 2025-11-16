@@ -52,64 +52,111 @@ $$
 ...
 
 ------------------------------------
-### Ejercicio 1:
-Identificacion de matrices.
+# Ejercicio 1: Determinantes 2×2
+## Calcula los determinantes:
 
-1. Primera matriz
+### 1. Primera matriz
 
 $$ A =
 \begin{pmatrix}
-1 & 0 \\
-0 & 1 \\
+5 & 2 \\
+3 & 1 \\
 \end{pmatrix}
-= Matriz \\ de \\ Identidad
 $$
 
-2. Segunda matriz
+1. calculamos los determinantes en diagonal
+2. multiplicamos 3 x 2 x (-1) = -6
+3. multiplicamos 5 x 1 x (1) = 5
+4. hacemos las resta correspondiente 5 - 6 = -1
+5. A = det(A)= -1
+
+### 2. Segunda matriz
 
 $$ B =
 \begin{pmatrix}
-3 & 0 & 0 \\
-0 & -2 & 0 \\
-0 & 0 & 5 \\
+-1 & 4 \\
+2 & -8 \\
 \end{pmatrix}
-= Matriz \\ Diagonal
 $$
 
-3. Tercera matriz
+1. calculamos los determinantes en diagonal
+2. multiplicamos 2 x 4 x (-1) = -8
+3. multiplicamos (-1) x (-8) x (1) = 8
+4. hacemos las resta correspondiente 8 - 8 = 0
+5. B = det(A)= 0
+
+### 3. Tercera matriz
 
 $$ C =
 \begin{pmatrix}
-2 & 1 & 4 \\
-1 & 3 & 5 \\
-4 & 5 & 6 \\
+6 & 9 \\
+2 & 3 \\
 \end{pmatrix}
-= Matriz \\ simetrica
 $$
 
-4. Cuarta Matriz
+1. calculamos los determinantes en diagonal
+2. multiplicamos 2 x 9 x (-1) = -18
+3. multiplicamos 6 x 3 x (1) = 18
+4. hacemos las resta correspondiente 18 - 18 = 0
+5. C = det(A)= 0
+
+### 4. Cuarta Matriz
 
 $$ D =
 \begin{pmatrix}
-1 & 2 & 3 \\
-0 & 4 & 5 \\
-0 & 0 & 6 \\
+0 & 5 \\
+-5 & 0 \\
 \end{pmatrix}
-= Matriz \\ triangular \\ superior
 $$
+
+1. calculamos los determinantes en diagonal
+2. multiplicamos (-5) x 5 x (-1) = 25
+3. multiplicamos 0 x 0 x (1) = 0
+4. hacemos las resta correspondiente 25 - 0 = 25
+5. D = det(A)= 25
 
 ------------------------------------
-### Ejercicio 2:
-Resolucion de problemas algebraicos con matrices.
+# Ejercicio 2:Regla de Sarrus
+## Usa Sarrus para calcular:
 
-a) Suma de A + B
+### 1. Primera matriz
 
-$$ A =
+$$ E =
 \begin{pmatrix}
-2 & -1 \\
-3 & 4 \\
+1 & 2 & 3\\
+0 & 1 & 4\\
+5 & 6 & 0\\
 \end{pmatrix}
 $$
+
+1. colocamos una linea debajo de la matriz
+2. copiamos en orden las filas 1 y 2
+
+$$ E =
+\begin{pmatrix}
+1 & 2 & 3\\
+0 & 1 & 4\\
+5 & 6 & 0\\
+\\
+1 & 2 & 3\\
+0 & 1 & 4\\
+\end{pmatrix}
+$$
+
+3. Calculamos primero las diagonales negativas:
++ multiplicamos 0 x 2 x 0 x (-1) = 0
++ multiplicamos 1 x 6 x 4 x (-1) = -24
++ multiplicamos 5 x 1 x 3 x (-1) = -15
++ TOTAL = -39
+
+4. Calculamos primero las diagonales negativas:
++ multiplicamos 1 x 1 x 0 x 1 = 0
++ multiplicamos 0 x 6 x 3 x 1 = 0
++ multiplicamos 5 x 2 x 4 x 1 = 40
++ TOTAL = 40
+
+5. hacemos las resta correspondiente 40 - 39 = 1
+6. E = det(A)= 1
 
 $$ B =
 \begin{pmatrix}
