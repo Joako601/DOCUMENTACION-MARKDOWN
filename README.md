@@ -346,8 +346,35 @@ $$
 + A^T = det(A)= 5
 
 3. corroboramos que det(A^T) = det(A)
-  
-  
+
+# Ejercicio 5: Aplicación geométric
+## Dados los vectores u = (3,2) y v = (1,4):
+a) Calcula el área del paralelogramo que forman
+
+b) ¿Cambia el área si intercambias los vectores?
+
+c) ¿Qué representa el signo del determinante?
+
+1. para hacer los incisos necesitamos convertir los vectores en una matriz:
+
+$$ A =
+\begin{pmatrix}
+3 & 2 \\
+1 & 4 \\
+\end{pmatrix}
+$$
+
+
+### inciso a
+
+1. calculamos los determinantes en diagonal
++ multiplicamos 1 x 2 x (-1) = -2
++ multiplicamos 3 x 4 x (1) = 12
++ hacemos la resta correspondiente 12 - 2 = 10
++ A = det(A)= 10
+
+2. el area es el determinante de la matriz
++ RESULTADO: area = 10
 
 
 
