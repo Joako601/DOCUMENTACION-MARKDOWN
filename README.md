@@ -67,7 +67,7 @@ $$
 1. calculamos los determinantes en diagonal
 2. multiplicamos 3 x 2 x (-1) = -6
 3. multiplicamos 5 x 1 x (1) = 5
-4. hacemos las resta correspondiente 5 - 6 = -1
+4. hacemos la resta correspondiente 5 - 6 = -1
 5. A = det(A)= -1
 
 ### 2. Segunda matriz
@@ -82,7 +82,7 @@ $$
 1. calculamos los determinantes en diagonal
 2. multiplicamos 2 x 4 x (-1) = -8
 3. multiplicamos (-1) x (-8) x (1) = 8
-4. hacemos las resta correspondiente 8 - 8 = 0
+4. hacemos la resta correspondiente 8 - 8 = 0
 5. B = det(A)= 0
 
 ### 3. Tercera matriz
@@ -97,7 +97,7 @@ $$
 1. calculamos los determinantes en diagonal
 2. multiplicamos 2 x 9 x (-1) = -18
 3. multiplicamos 6 x 3 x (1) = 18
-4. hacemos las resta correspondiente 18 - 18 = 0
+4. hacemos la resta correspondiente 18 - 18 = 0
 5. C = det(A)= 0
 
 ### 4. Cuarta Matriz
@@ -112,11 +112,11 @@ $$
 1. calculamos los determinantes en diagonal
 2. multiplicamos (-5) x 5 x (-1) = 25
 3. multiplicamos 0 x 0 x (1) = 0
-4. hacemos las resta correspondiente 25 - 0 = 25
+4. hacemos la resta correspondiente 25 - 0 = 25
 5. D = det(A)= 25
 
 ------------------------------------
-# Ejercicio 2:Regla de Sarrus
+# Ejercicio 2: Regla de Sarrus
 ## Usa Sarrus para calcular:
 
 ### 1. Primera matriz
@@ -149,308 +149,117 @@ $$
 + multiplicamos 5 x 1 x 3 x (-1) = -15
 + TOTAL = -39
 
-4. Calculamos primero las diagonales negativas:
+4. Calculamos primero las diagonales positivas:
 + multiplicamos 1 x 1 x 0 x 1 = 0
 + multiplicamos 0 x 6 x 3 x 1 = 0
 + multiplicamos 5 x 2 x 4 x 1 = 40
 + TOTAL = 40
 
-5. hacemos las resta correspondiente 40 - 39 = 1
+5. hacemos la resta correspondiente 40 - 39 = 1
 6. E = det(A)= 1
 
-$$ B =
+### 2. Segunda matriz
+
+$$ F =
 \begin{pmatrix}
-5 & 2 \\
--1 & 3 \\
+2 & -1 & 3\\
+1 & 4 & 0\\
+3 & 2 & -2\\
 \end{pmatrix}
 $$
 
+1. colocamos una linea debajo de la matriz
+2. copiamos en orden las filas 1 y 2
 
-$$ A + B =
+$$ F =
 \begin{pmatrix}
-2 + 5 & -1 + 2 \\
-3 + (-1) & 4 + 3 \\
+2 & -1 & 3\\
+1 & 4 & 0\\
+3 & 2 & -2\\
+\\
+2 & -1 & 3\\
+1 & 4 & 0\\
 \end{pmatrix}
 $$
 
-Resultado:
+3. Calculamos primero las diagonales negativas:
++ multiplicamos 1 x -1 x -2 x (-1) = -2
++ multiplicamos 2 x 2 x 0 x (-1) = 0
++ multiplicamos 3 x 4 x 3 x (-1) = -36
++ TOTAL = -38
 
-$$ A + B =
+4. Calculamos primero las diagonales positivas:
++ multiplicamos 2 x 4 x (-2) x 1 = -16
++ multiplicamos 1 x 2 x 3 x 1 = 6
++ multiplicamos 3 x (-1) x 0 x 1 = 0
++ TOTAL = -10
+
+5. hacemos la resta correspondiente -38 - 10 = -48
+6. F = det(A)= -48
+
+# Ejercicio 3: Método de cofactores
+## Calcula usando cofactores (expandir por la fila o columna más conveniente):
+
+### 1. Primera matriz
+
+$$ G =
 \begin{pmatrix}
-7 & 1 \\
-2 & 7 \\
+1 & 0 & 2\\
+-1 & 3 & 1\\
+2 & 0 & 1\\
 \end{pmatrix}
 $$
 
-b) Resta de 2A - B
+1. La primera columna se le agrega un signo (+)
+2. Se alternan los signos para el resto de las columnas.
 
-$$ A =
+$$ G =
 \begin{pmatrix}
-2 & -1 \\
-3 & 4 \\
+1 & 0 & 2\\
+-1 & 3 & 1\\
+2 & 0 & 1\\
 \end{pmatrix}
 $$
 
-$$ B =
-\begin{pmatrix}
-5 & 2 \\
--1 & 3 \\
-\end{pmatrix}
-$$
+3. Agarramos el primer numero de la fila 1 y columna 1 y agarramos los numeros de las filas 2 y 3 con las columnas 2 y 3.
+```
+1 | 3 1 |
+  | 0 1 |
+```
+4. hacemos las multiplicaciones cruzadas dentro de los || y luego multiplicamos por el numero de afuera.
+```
+1 | 3 1 | = 1 x 3 = 3
+  | 0 1 |
+```
+5. Agarramos el primer numero de la fila 1 y columna 2 y agarramos los numeros de las filas 2 y 3 con las columnas 1 y 3.
+```
+0 | -1 1 |
+  | 2 1  |
+```
+6. hacemos las multiplicaciones cruzadas dentro de los || y luego multiplicamos por el numero de afuera.
+```
+0 | -1 1 | = 0 (-2 x 1) = 0
+  | 2 1  |
+```
+7. Agarramos el primer numero de la fila 1 y columna 3 y agarramos los numeros de las filas 2 y 3 con las columnas 1 y 2.
+```
+2 | -1 3 |
+  | 2 0  |
+```
+8. hacemos las multiplicaciones cruzadas dentro de los || y luego multiplicamos por el numero de afuera.
+```
+2 | -1 3 | = 2 x (-6) = -12
+  | 2 0  |
+```
+8. hacemos las sumas de los tres bloques para que nos el determinanste
++ 3 + 0 - 12 = -9
 
-Se multiplica la matriz A por 2
-
-$$ 2A =
-\begin{pmatrix}
-2 * 2 & 2 * -1 \\
-2 * 3 & 2 * 4 \\
-\end{pmatrix}
-$$ 
-
-$$ 2A =
-\begin{pmatrix}
-4 & -2 \\
-6 & 8 \\
-\end{pmatrix}
-$$ 
-
-Se restar 2A - B
-
-$$ 2A - B =
-\begin{pmatrix}
-4 - 5 & -2 - 2 \\
-6 - (-1) & 8 - 3 \\
-\end{pmatrix}
-$$
-
-Resultado:
-
-$$ 2A - B =
-\begin{pmatrix}
--1 & -4 \\
-7 & 5 \\
-\end{pmatrix}
-$$
-
-c) AB
-
-$$ A =
-\begin{pmatrix}
-2 & -1 \\
-3 & 4 \\
-\end{pmatrix}
-$$
-
-$$ B =
-\begin{pmatrix}
-5 & 2 \\
--1 & 3 \\
-\end{pmatrix}
-$$
-
-$$ AB =
-\begin{bmatrix}
-2 * 5 & 2 * 2 \\
--1 * -1 & -1 * 3 \\
-            \\  
-3 * 5 & 3 * 2 \\
-4 * -1 & 4 * 3 \\
-\end{bmatrix}
-$$
-
-Resultado:
-
-$$ AB =
-\begin{pmatrix}
-11 & 1 \\
-11 & 18 \\
-\end{pmatrix}
-$$
-
-d) BA
-
-$$ B =
-\begin{pmatrix}
-5 & 2 \\
--1 & 3 \\
-\end{pmatrix}
-$$
-
-$$ A =
-\begin{pmatrix}
-2 & -1 \\
-3 & 4 \\
-\end{pmatrix}
-$$
+9. Resultado:
++ G = det(A) = -9
 
 
 
-$$ BA =
-\begin{bmatrix}
-5 * 2 & 5 * -1 \\
-2 * 3 & 2 * 4 \\
-                  \\
--1 * 2 & -1 * -1 \\
-3 * 3 & 3 * 4 \\
-\end{bmatrix}
-$$
 
-Resultado:
-
-$$ BA =
-\begin{pmatrix}
-16 & 3 \\
-7 & 13 \\
-\end{pmatrix}
-$$
-
-e) A^T
-
-$$ A =
-\begin{pmatrix}
-2 & -1 \\
-3 & 4 \\
-\end{pmatrix}
-$$
-
-Resultado:
-
-$$ A^T =
-\begin{pmatrix}
-2 & 3 \\
--1 & 4 \\
-\end{pmatrix}
-$$
-
-
-------------------------------------
-### Ejercicio 3:
-Verificacion de matrices por asociacion
-
-Matrices base:
-
-$$ A = 
-\begin{pmatrix}
-1 & 2 \\
-3 & 4 \\
-\end{pmatrix}
-$$
-
-$$ B = 
-\begin{pmatrix}
-2 & 0 \\
-1 & 3 \\
-\end{pmatrix}
-$$
-
-$$ C = 
-\begin{pmatrix}
-1 & 1 \\
-0 & 2 \\
-\end{pmatrix}
-$$
-
-Verificar que (AB)C = A(BC)
-
-1. verificacion de (AB)C
-
-Primero multiplicamos A * B
-
-$$ AB =
-\begin{pmatrix}
-1(2) + 2(1) & 1(0) + 2(3) \\
-3(2) + 4(1) & 3(0) + 3(4) \\
-\end{pmatrix} 
-$$
-
-$$
-\begin{pmatrix}
-2 + 2 & 0 + 6 \\
-6 + 4 & 0 + 12 \\
-\end{pmatrix}
-$$
-
-$$
-\begin{pmatrix}
-4 & 6 \\
-10 & 12 \\
-\end{pmatrix}
-$$
-
-Segundo multiplicamos (AB) * C
-
-$$ (AB)C =
-\begin{pmatrix}
-4(1) + 6(0) & 4(1) + 6(2) \\
-10(1) + 12(0) & 10(1) + 12(2) \\
-\end{pmatrix}
-$$
-
-$$
-\begin{pmatrix}
-4 + 0 & 4 + 12 \\
-10 + 0 & 10 + 24 \\
-\end{pmatrix}
-$$
-
-$$
-\begin{pmatrix}
-4 & 16 \\
-10 & 34 \\
-\end{pmatrix}
-$$
-
-2. verificacion de A(BC)
-
-Primero multiplicamos B * C
-
-$$ BC =
-\begin{pmatrix}
-2(1) + 0(0) & 2(1) + 0(2) \\
-1(1) + 3(0) & 1(1) + 3(2) \\
-\end{pmatrix}
-$$
-
-$$
-\begin{pmatrix}
-2 + 0 & 2 + 0 \\
-1 + 0 & 1 + 6 \\
-\end{pmatrix}
-$$
-
-$$
-\begin{pmatrix}
-2 & 2 \\
-1 & 7 \\
-\end{pmatrix}
-$$
-
-Segundo multiplicamos A * (BC)
-
-$$ A(BC) =
-\begin{pmatrix}
-1(2) + 2(1) & 1(2) + 2(7) \\
-3(2) + 4(1) & 3(2) + 4(7) \\
-\end{pmatrix}
-$$
-
-$$
-\begin{pmatrix}
-2 + 2 & 2 + 14 \\
-6 + 4 & 6 + 28 \\
-\end{pmatrix}
-$$
-
-$$
-\begin{pmatrix}
-4 & 16 \\
-10 & 34 \\
-\end{pmatrix}
-$$
-
-Son iguales por la propiedad asociativa
-
----
 
 
 
