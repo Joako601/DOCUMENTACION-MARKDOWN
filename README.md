@@ -1,7 +1,7 @@
 # Tecnológico de Software
 ## Materia: Fundamentos de álgebra
 ## Alumno: Joaquin Uriona
-## Actividad \#16 - Matrices doc
+## Actividad \#18 - Matrices doc
 
 ---
 ### Identificación de matrices
