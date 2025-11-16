@@ -365,7 +365,7 @@ $$ A =
 $$
 
 
-### inciso a
+### inciso A
 
 1. calculamos los determinantes en diagonal
 + multiplicamos 1 x 2 x (-1) = -2
@@ -376,7 +376,29 @@ $$
 2. el area es el determinante de la matriz
 + RESULTADO: area = 10
 
+### inciso B
 
+1. intercambiamos los vectores
+
+$$ A =
+\begin{pmatrix}
+1 & 4 \\
+3 & 2 \\
+\end{pmatrix}
+$$
+
+2. calculamos los determinantes en diagonal
++ multiplicamos 3 x 4 x (-1) = -12
++ multiplicamos 1 x 2 x (1) = 2
++ hacemos la resta correspondiente 2 - 12 = -10
++ A = det(A)= -10
+
+3. RESULTADO:
++ cambia el area si intercambiamos los vectores
+
+### inciso C
+
++ Es el orden en el cual ingresaron los vectores
 
 
 
