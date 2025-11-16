@@ -258,6 +258,55 @@ $$
 + G = det(A) = -9
 
 
+# Ejercicio 4: Verificar propiedades
+## Dadas y , verifica que:
++ det(AB) = det(A) x det(B)
++ det(A^T) = det(A)
+
+$$ A =
+\begin{pmatrix}
+2 & 1 \\
+1 & 3 \\
+\end{pmatrix}
+$$
+
+$$ B =
+\begin{pmatrix}
+1 & 2 \\
+3 & 1 \\
+\end{pmatrix}
+$$
+
+### 1. Primera verificacion de det(AB) = det(A) x det(B)
+
+1. det(A) x det(B)
++ det(A):
++ calculamos los determinantes en diagonal
++ multiplicamos 1 x 1 x (-1) = -1
++ multiplicamos 2 x 3 x (1) = 6
++ hacemos la resta correspondiente 6 - 1 = 5
++ A = det(A)= 5
+
+--------------------------------------
++ det(B):
++ calculamos los determinantes en diagonal
++ multiplicamos 3 x 2 x (-1) = -6
++ multiplicamos 1 x 1 x (1) = 1
++ hacemos la resta correspondiente 1 - 6 = -5
++ B = det(A)= -5
+
+2. multiplicamos los determinantes de A y B
++ 5 x (-5) = -25
+
+3. det(AB):
++ multiplicamos las columnas con sus respectivas filas
+
+$$ AB =
+\begin{pmatrix}
+1 . 2 & 2 \\
+3 & 1 \\
+\end{pmatrix}
+$$
 
 
 
