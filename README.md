@@ -280,34 +280,74 @@ $$
 ### 1. Primera verificacion de det(AB) = det(A) x det(B)
 
 1. det(A) x det(B)
-+ det(A):
+2. det(A):
 + calculamos los determinantes en diagonal
 + multiplicamos 1 x 1 x (-1) = -1
 + multiplicamos 2 x 3 x (1) = 6
 + hacemos la resta correspondiente 6 - 1 = 5
 + A = det(A)= 5
 
---------------------------------------
-+ det(B):
+
+3. det(B):
 + calculamos los determinantes en diagonal
 + multiplicamos 3 x 2 x (-1) = -6
 + multiplicamos 1 x 1 x (1) = 1
 + hacemos la resta correspondiente 1 - 6 = -5
 + B = det(A)= -5
 
-2. multiplicamos los determinantes de A y B
+4. multiplicamos los determinantes de A y B
 + 5 x (-5) = -25
 
-3. det(AB):
+5. det(AB):
 + multiplicamos las columnas con sus respectivas filas
 
 $$ AB =
+\begin{bmatrix}
+2 * 1 & 2 * 2 \\
+1 * 3 & 1 * 1 \\
+            \\  
+1 * 1 & 1 * 2 \\
+3 * 3 & 3 * 1 \\
+\end{bmatrix}
+$$
+
++ Resultado:
+
+$$ AB =
 \begin{pmatrix}
-1 . 2 & 2 \\
-3 & 1 \\
+5 & 5 \\
+10 & 5 \\
 \end{pmatrix}
 $$
 
++ calculamos los determinantes en diagonal
++ multiplicamos 10 x 5 x (-1) = -50
++ multiplicamos 5 x 5 x (1) = 25
++ hacemos la resta correspondiente 25 - 50 = -25
++ AB = det(A)= -25
+
+6. corroboramos que det(AB) = det(A) x det(B)
+
+### 2. Segunda verificacion de det(A^T) = det(A)
+
+1. cambiamos el orden de las filas x columnas
+
+$$ A^T =
+\begin{pmatrix}
+2 & 1 \\
+1 & 3 \\
+\end{pmatrix}
+$$
+
+2. calculamos los determinantes en diagonal
++ multiplicamos 1 x 1 x (-1) = -1
++ multiplicamos 2 x 3 x (1) = 6
++ hacemos la resta correspondiente 6 - 1 = 5
++ A^T = det(A)= 5
+
+3. corroboramos que det(A^T) = det(A)
+  
+  
 
 
 
