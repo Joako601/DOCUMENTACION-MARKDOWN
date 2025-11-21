@@ -9,4 +9,11 @@
 ## Descripcion del proceso para la creacion de las plantillas.
 
 
+Menu --> Formato Condicional -->
+
+| | | |
+|---|---|---|
+|a|b|c|
+|1|2|3|
+|x|y|z|
 
