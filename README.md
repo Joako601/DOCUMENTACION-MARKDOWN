@@ -4,7 +4,7 @@
 ## Actividad \#16 - Matrices doc
 
 ---
-### Creacion de excel para matrices.
+# Creacion de excel para matrices.
 
 ## Descripcion del proceso para la creacion de las plantillas.
 
