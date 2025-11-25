@@ -1,7 +1,7 @@
 # Tecnológico de Software
 ## Materia: Fundamentos de álgebra
 ## Alumno: Joaquin Uriona
-## Actividad \#20 - Matrices doc
+## Actividad \#20 - Documentación de matrices con Git Branches
 
 ---
 # Creacion de excel para matrices.
