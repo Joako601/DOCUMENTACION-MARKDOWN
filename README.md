@@ -5,11 +5,10 @@
 
 ---
 
-## Ejercicios
+# Ejercicios
 
-### 1. Resuelve el siguiente sistema usando todos los métodos:
-
-Sistema:
+# Ejercicio 1: Resolver con todos los métodos:
+## Resuelve el siguiente sistema usando:
 
 $$
 \begin{cases}
@@ -18,6 +17,18 @@ x + y + z = 6 \\
 x + 2y - z = 2
 \end{cases}
 $$
+
++ Matriz aumentada:
+
+$$
+\begin{pmatrix}
+1 & 1 & 1 & | & 6 \\
+2 & -1 & 1 & | & 3 \\
+1 & 2 & -1 & | & 2
+\end{pmatrix}
+$$
+
+## Método de Gauss:
 
 Matriz aumentada:
 
@@ -29,110 +40,88 @@ $$
 \end{pmatrix}
 $$
 
----
-
-# Ejercicio 1 — Resolver el sistema por todos los métodos
-
-## Método de Gauss
-
-Matriz aumentada:
-
-$$
-\begin{bmatrix}
-1 & 1 & 1 & | & 6 \\
-2 & -1 & 1 & | & 3 \\
-1 & 2 & -1 & | & 2
-\end{bmatrix}
-$$
-
 **Operaciones:**
 
-1. \(F_2 \leftarrow F_2 - 2F_1\)  
-2. \(F_3 \leftarrow F_3 - F_1\)  
-3. \(F_3 \leftarrow F_3 + F_2\)
+1. (F2 ---> F2 - 2.F1)  
+2. (F3 ---> F3 - F1)  
+3. (F3 ---> F3 + F2)
 
-**Resultado:**
+Resultado:
 
 $$
-\begin{bmatrix}
+\begin{pmatrix}
 1 & 1 & 1 & | & 6 \\
 0 & -3 & -1 & | & -9 \\
 0 & 0 & 2 & | & 4
-\end{bmatrix}
+\end{pmatrix}
 $$
 
 Soluciones:  
-- \(z = 2\)  
-- \(y = 3\)  
-- \(x = 1\)
++ (z = 2)  
++ (y = 3)  
++ (x = 1)
 
----
-
-## Método Gauss–Jordan
+## Método Gauss–Jordan:
 
 Partiendo de:
 
 $$
-\begin{bmatrix}
+\begin{pmatrix}
 1 & 1 & 1 & | & 6 \\
 0 & -3 & -1 & | & -9 \\
 0 & 0 & 2 & | & 4
-\end{bmatrix}
+\end{pmatrix}
 $$
 
 **Operaciones:**
 
-1. \(F_3 \leftarrow \tfrac{1}{2}F_3\)  
-2. \(F_2 \leftarrow F_2 + F_3\)  
-3. \(F_1 \leftarrow F_1 - F_3\)  
-4. \(F_1 \leftarrow F_1 - F_2\)
+1. (F3 ---> 1/2.F_3)  
+2. (F2 ---> F2 + F3)  
+3. (F1 ---> F1 - F3)  
+4. (F1 ---> F1 - F2)
 
-**Resultado reducido:**
+Resultado reducido:
 
 $$
-\begin{bmatrix}
+\begin{pmatrix}
 1 & 0 & 0 & | & 1 \\
 0 & 1 & 0 & | & 3 \\
 0 & 0 & 1 & | & 2
-\end{bmatrix}
+\end{pmatrix}
 $$
 
----
-
-## Matriz inversa
+## Matriz inversa:
 
 Matriz de coeficientes:
 
 $$
 A =
-\begin{bmatrix}
+\begin{pmatrix}
 1 & 1 & 1 \\
 2 & -1 & 1 \\
 1 & 2 & -1
-\end{bmatrix}
+\end{pmatrix}
 $$
 
 Vector de resultados:
 
 $$
 B = 
-\begin{bmatrix}
+\begin{pmatrix}
 6 \\ 3 \\ 2
-\end{bmatrix}
+\end{pmatrix}
 $$
 
 Cálculo:
 
 $$
 X = A^{-1} B =
-\begin{bmatrix}
+\begin{pmatrix}
 1 \\ 3 \\ 2
-\end{bmatrix}
+\end{pmatrix}
 $$
 
----
-
-## Regla de Cramer
+## Cramer:
 
 Determinante:
 
@@ -142,13 +131,12 @@ $$
 
 Resultados:
 
-- \(x = 1\)  
-- \(y = 3\)  
-- \(z = 2\)
++ (x = 1)  
++ (y = 3)  
++ (z = 2)
 
----
+## Solución del Ejercicio 1
 
-# Solución del Ejercicio 1
 
 $$
 (x, y, z) = (1, 3, 2)
@@ -156,22 +144,19 @@ $$
 
 ---
 
-# Ejercicio 2 — Tipo de solución
+# Ejercicio 2: Identificar tipo de solución
+## Determina si cada sistema tiene solución única, infinitas o ninguna:
 
-### a)  
-Sistema dependiente → infinitas soluciones.
++ ## a) Sistema dependiente → infinitas soluciones.
 
-### b)  
-Sistema incompatible → no tiene solución.
++ ## b) Sistema incompatible → no tiene solución.
 
-### c)  
-Sistema compatible determinado → solución única.
++ ## c) Sistema compatible determinado → solución única.
 
 ---
 
 # Ejercicio 3 — Sistema 4×4
-
-Resolver:
+## Resuelve usando el método más eficiente:
 
 $$
 \begin{cases}
@@ -182,67 +167,60 @@ x + y - z + 2w = 8
 \end{cases}
 $$
 
-Matriz aumentada:
+## Matriz aumentada:
 
 $$
-\begin{bmatrix}
+\begin{pmatrix}
 1 & 1 & 1 & 1 & | & 10 \\
 2 & 1 & -1 & 1 & | & 5 \\
 1 & -1 & 1 & -1 & | & 1 \\
 1 & 1 & -1 & 2 & | & 8
-\end{bmatrix}
+\end{pmatrix}
 $$
 
-Luego de aplicar Gauss:
++ Luego de aplicar Gauss:
 
 $$
-\begin{bmatrix}
+\begin{pmatrix}
 1 & 1 & 0 & 0 & | & 3 \\
 0 & 1 & 0 & 1 & | & 4 \\
 0 & 0 & 1 & 1 & | & 3 \\
 0 & 0 & 0 & 1 & | & 1
-\end{bmatrix}
+\end{pmatrix}
 $$
 
-**Soluciones:**
+Soluciones:
 
-- \(w = 1\)  
-- \(z = 2\)  
-- \(y = 3\)  
-- \(x = 0\)
++ (w = 1)  
++ (z = 2)  
++ (y = 3)  
++ (x = 0)
 
 ---
 
 # Ejercicio 4 — Aplicación práctica
 
-Productos: Premium (P), Standard (S), Utilitario (U)  
-Materias primas: res (R), pollo (Q), cerdo (C)
++ Productos: Premium (P), Standard (S), Utilitario (U)  
++ Materias primas: res (R), pollo (Q), cerdo (C)
 
-Sistema:
-
-$$
-\begin{bmatrix}
-2 & 1 & 3 \\
-3 & 1 & 2 \\
-1 & 2 & 1
-\end{bmatrix}
-\begin{bmatrix}
-P \\ S \\ U
-\end{bmatrix}
-=
-\begin{bmatrix}
-100 \\ 120 \\ 80
-\end{bmatrix}
-$$
+$`\begin{pmatrix}
+2 & 1 & 3 & | & P \\
+3 & 1 & 2 & | & S \\
+1 & 2 & 1 & | & U
+\end{pmatrix}`$
 
 Aplicando Gauss:
-$$
+
+$`\begin{pmatrix}
+1 & 0 & 1 & | & 20 \\
+0 & 1 & 1 & | & 40 \\
+0 & 0 & 1 & | & 20
+\end{pmatrix}`$
+
+Soluciones:
+
++ (U = 20)
++ (S = 20)  
++ (P = 0)
 
 
-**Soluciones:**
-
-- \(U = 20\)  
-- \(S = 20\)  
-- \(P = 0\)
-
----
